@@ -1,0 +1,13 @@
+filters:
+  and:
+    - file.hasTag("klasse")
+    - not:
+        - file.inFolder("99_Vorlagen")
+views:
+  - type: table
+    name: "Alle Klassen"
+    order:
+      - note.kuerzel
+      - note.klassenstufe
+      - note.klassenlehrer
+      - note.schuljahr

@@ -1,0 +1,13 @@
+filters:
+  and:
+    - file.hasTag("kurs")
+    - not:
+        - file.inFolder("99_Vorlagen")
+views:
+  - type: table
+    name: "Alle Kurse"
+    order:
+      - note.fach
+      - note.kursbezeichnung
+      - note.klassen
+      - note.schuljahr
